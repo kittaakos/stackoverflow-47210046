@@ -1,0 +1,37 @@
+{
+  "name": "stackoverflow-47210046",
+  "version": "1.0.0",
+  "description": "How to publish a component written in typescript consumable as a global, commonjs, or typescript module",
+  "main": "lib/index",
+  "typings": "lib/index",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf ./lib",
+    "test": "mocha --opts ./mocha.opts \"src/**/*.spec.ts\"",
+    "postinstall": "npm run build && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kittaakos/stackoverflow-47210046.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/kittaakos/stackoverflow-47210046/issues"
+  },
+  "homepage": "https://github.com/kittaakos/stackoverflow-47210046#readme",
+  "dependencies": {
+    "@types/d3": "^4.11.1",
+    "d3": "^4.11.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/mocha": "^2.2.44",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "rimraf": "^2.6.2",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.6.1"
+  }
+}
