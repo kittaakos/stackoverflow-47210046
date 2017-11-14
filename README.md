@@ -3,6 +3,23 @@
 This is just another boilerplate example on publishing a package written in TypeScript.
 The corresponding stackoverflow.com question can be found [here](https://stackoverflow.com/questions/47210046/how-to-publish-a-component-written-in-typescript-consumable-as-a-global-commonj).
 
+### Quick start
+```bash
+git clone https://github.com/kittaakos/stackoverflow-47210046.git \
+cd stackoverflow-47210046 \
+npm i
+```
+
+### Build
+```bash
+npm run build
+```
+
+### Test
+```bash
+npm run test
+```
+
 ### Some remarks
  - Make sure you have added `"dom"` to the libraries in the `tsconfig.json` to include them during the compilation.
  - Add `"main": "lib/index"` to the `package.json`. You can see, it points to the compiled output and has no file extension.
