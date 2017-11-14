@@ -27,3 +27,4 @@ npm run test
  - Although the `lib` output folder is not added to version control, that will be available on npmjs.org.
  - The tests will be executed with `ts-node` so the `tsc` compilation can be omitted.
  - If you want to run your test in watch mode, execute `npm run test -- -w`.
+ - If you want to run your `tsc` compiler in watch mode, execute `npm run build -- -w`.
