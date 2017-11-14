@@ -1,14 +1,13 @@
 {
   "name": "stackoverflow-47210046",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "How to publish a component written in typescript consumable as a global, commonjs, or typescript module",
   "main": "lib/index",
   "typings": "lib/index",
   "scripts": {
     "build": "tsc",
     "clean": "rimraf ./lib",
-    "test": "mocha --opts ./mocha.opts \"src/**/*.spec.ts\"",
-    "postinstall": "npm run build && npm run test"
+    "test": "mocha --opts ./mocha.opts \"src/**/*.spec.ts\""
   },
   "repository": {
     "type": "git",

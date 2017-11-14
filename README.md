@@ -6,8 +6,10 @@ The corresponding stackoverflow.com question can be found [here](https://stackov
 ### Quick start
 ```bash
 git clone https://github.com/kittaakos/stackoverflow-47210046.git \
-cd stackoverflow-47210046 \
-npm i
+&& cd stackoverflow-47210046 \
+&& npm i \
+&& npm run build \
+&& npm run test
 ```
 
 ### Build
@@ -28,3 +30,16 @@ npm run test
  - The tests will be executed with `ts-node` so the `tsc` compilation can be omitted.
  - If you want to run your test in watch mode, execute `npm run test -- -w`.
  - If you want to run your `tsc` compiler in watch mode, execute `npm run build -- -w`.
+
+### Use the published npm  package
+```bash
+mkdir tmp-client \
+&& cd tmp-client \
+&& npm init -y \
+&& npm i -D typescript ts-node \
+&& npm i -S stackoverflow-47210046 \
+&& echo "const MyAwesomeComponent = require('stackoverflow-47210046').MyAwesomeComponent; console.log(new MyAwesomeComponent().render());" > main_js.js \
+&& node main_js \
+&& echo "import { MyAwesomeComponent } from 'stackoverflow-47210046'; console.log(new MyAwesomeComponent().render());" > main_ts.ts \
+&& ./node_modules/.bin/ts-node main_ts.ts
+```
