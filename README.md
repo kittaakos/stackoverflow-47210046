@@ -25,7 +25,7 @@ npm run test
 ### Some remarks
  - Make sure you have added `"dom"` to the libraries in the `tsconfig.json` to include them during the compilation.
  - Add `"main": "lib/index"` to the `package.json`. You can see, it points to the compiled output and has no file extension.
- - Adde "typings": "lib/index" to the `package.json`.
+ - Adde `"typings": "lib/index"` to the `package.json`.
  - Although the `lib` output folder is not added to version control, that will be available on npmjs.org.
  - The tests will be executed with `ts-node` so the `tsc` compilation can be omitted.
  - If you want to run your test in watch mode, execute `npm run test -- -w`.
